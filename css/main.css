@@ -34,14 +34,15 @@
 }	
 
 body {
-	background: rgba(203,174,116,1);
-	background: -moz-radial-gradient(center, ellipse cover, rgba(203,174,116,1) 0%, rgba(193,157,89,1) 100%);
-	background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%, rgba(203,174,116,1)), color-stop(100%, rgba(193,157,89,1)));
-	background: -webkit-radial-gradient(center, ellipse cover, rgba(203,174,116,1) 0%, rgba(193,157,89,1) 100%);
-	background: -o-radial-gradient(center, ellipse cover, rgba(203,174,116,1) 0%, rgba(193,157,89,1) 100%);
-	background: -ms-radial-gradient(center, ellipse cover, rgba(203,174,116,1) 0%, rgba(193,157,89,1) 100%);
-	background: radial-gradient(ellipse at center, rgba(203,174,116,1) 0%, rgba(193,157,89,1) 100%);
-	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#cbae74', endColorstr='#c19d59', GradientType=1 );
+background: #cdb27a; /* Old browsers */
+background: -moz-radial-gradient(center, ellipse cover,  #cdb27a 0%, #c19e5a 100%); /* FF3.6+ */
+background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%,#cdb27a), color-stop(100%,#c19e5a)); /* Chrome,Safari4+ */
+background: -webkit-radial-gradient(center, ellipse cover,  #cdb27a 0%,#c19e5a 100%); /* Chrome10+,Safari5.1+ */
+background: -o-radial-gradient(center, ellipse cover,  #cdb27a 0%,#c19e5a 100%); /* Opera 12+ */
+background: -ms-radial-gradient(center, ellipse cover,  #cdb27a 0%,#c19e5a 100%); /* IE10+ */
+background: radial-gradient(ellipse at center,  #cdb27a 0%,#c19e5a 100%); /* W3C */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#cdb27a', endColorstr='#c19e5a',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+
 	text-align: center;
 	color: #241934;
 }
@@ -59,6 +60,7 @@ body {
 	padding-bottom: 8px;
 	-webkit-box-shadow: 0 5px 0 0 #826e47;
     box-shadow: 0 5px 0 0 #826e47;
+    min-height: 200px;
 }
 
 .title {
@@ -148,7 +150,7 @@ h2 {
 }
 
 .control-label {
-		font-family: 'caviar_dreamsbold';
+	font-family: 'caviar_dreamsbold';
 	color: #826e47;
 	text-transform: uppercase;
 
@@ -165,9 +167,26 @@ h2 {
 }
 
 .input-group-addon {
-		background-color: #e2dec5;
+	background-color: #e2dec5;
 	border-color: #d8c49e;
 	color: #826e47;
 }
 
+.card-text {
+	position: relative;
+	top: 145px; 
+	width: 266px;
+	margin: 0 auto;
+}
+
+.card-text p {
+	text-transform: uppercase;
+	text-align: left;	
+}
+
+.card-area {
+	margin-bottom: 20px;
+	margin-top: -30px;
+}
+}
 
